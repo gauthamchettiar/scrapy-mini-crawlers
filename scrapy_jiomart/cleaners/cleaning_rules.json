@@ -1,0 +1,885 @@
+{
+    "fetch_quantity_rules": {
+        "yam": [
+            {
+                "type": "piece",
+                "regex": "per pc",
+                "quantity": 1
+            },
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            }
+        ],
+        "watermelon kiran": [
+            {
+                "type": "piece",
+                "regex": "([0-9.]+) pc"
+            },
+            {
+                "type": "unknown",
+                "regex": "",
+                "quantity": 1
+            }
+        ],
+        "turai": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "tomato cherry": [
+            {
+                "type": "pack",
+                "regex": "([0-9.]+) pack"
+            }
+        ],
+        "tomato": [
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            },
+            {
+                "type": "kilogram",
+                "regex": "per kg",
+                "quantity": 1
+            }
+        ],
+        "strawberry": [
+            {
+                "type": "pack",
+                "regex": "pack",
+                "quantity": 1
+            }
+        ],
+        "sprout moong": [
+            {
+                "type": "pack",
+                "regex": "pack",
+                "quantity":1
+            }
+        ],
+        "sprouts mung": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "sprouts mix": [
+            {
+                "type": "pack",
+                "regex": "pack",
+                "quantity":1
+            }
+        ],
+        "sprouts mixed": [
+            {
+                "type": "pack",
+                "regex": "([0-9.]+) pack"
+            }
+        ],
+        "sprouts channa brown": [
+            {
+                "type": "pack",
+                "regex": "per pack",
+                "quantity": 1
+            }
+        ],
+        "sprouted beans": [
+            {
+                "type": "pack",
+                "regex": "([0-9.]+) pack"
+            }
+        ],
+        "sprout matki": [
+            {
+                "type": "pack",
+                "regex": "pack",
+                "quantity": 1
+            }
+        ],
+        "string less beans": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "spinach": [
+            {
+                "type": "bunch",
+                "regex": "([0-9.]+) bunch"
+            },
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "dill leaves": [
+            {
+                "type": "bunch",
+                "regex": "([0-9.]+) bunch"
+            }
+        ],
+        "snake gourd": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "bottle gourd": [
+            {
+                "type": "kilogram",
+                "regex": "per kg",
+                "quantity":1
+            }
+        ],
+        "pointed gourd": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "sapota": [
+            {
+                "type": "piece",
+                "regex": "([0-9.]+) pc"
+            }
+        ],
+        "chiku": [
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            }
+        ],
+        "ridge gourd": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "radish white": [
+            {
+                "type": "piece",
+                "regex": "([0-9.]+) pc"
+            }
+        ],
+        "raddish": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "potato sweet": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            },
+            {
+                "type": "unknown",
+                "regex": "",
+                "quantity": 1
+            }
+        ],
+        "ratalu": [
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            }
+        ],
+        "potato baby": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "potato": [
+            {
+                "type": "kilogram",
+                "regex": "per kg",
+                "quantity": 1
+            },
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            }
+        ],
+        "pomegranate kullu": [
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            }
+        ],
+        "pomegranate kesar": [
+            {
+                "type": "piece",
+                "regex": "([0-9.]+) pc"
+            },
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            },
+            {
+                "type": "kilogram",
+                "regex": "per kg",
+                "quantity": 1
+            }
+        ],
+        "pomegranate economy": [
+            {
+                "type": "piece",
+                "regex": "([0-9.]+) pc"
+            }
+        ],
+        "pineapple": [
+            {
+                "type": "piece",
+                "regex": "([0-9.]+) pc"
+            }
+        ],
+        "peas green": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            },
+            {
+                "type": "kilogram",
+                "regex": "per kg",
+                "quantity": 1
+            }
+        ],
+        "papaya raw": [
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            },
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "papaya": [
+            {
+                "type": "piece",
+                "regex": "each",
+                "quantity": 1
+            },
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+)kg"
+            }
+        ],
+        "orange kinoo": [
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            },
+            {
+                "type": "kilogram",
+                "regex": "per kg",
+                "quantity":1
+            }
+        ],
+        "orange imported": [
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            },
+            {
+                "type": "piece",
+                "regex": "([0-9.]+) pc"
+            }
+        ],
+        "orange": [
+            {
+                "type": "piece",
+                "regex": "([0-9.]+) pc"
+            },
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            },
+            {
+                "type": "kilogram",
+                "regex": "per kg",
+                "quantity": 1
+            }
+        ],
+        "onion white": [
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            }
+        ],
+        "onion spring": [
+            {
+                "type": "bunch",
+                "regex": "([0-9.]+) bunch"
+            }
+        ],
+        "onion sirka": [
+            {
+                "type": "kilogram",
+                "regex": "kg",
+                "quantity": 1
+            }
+        ],
+        "onion sambhar": [
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            }
+        ],
+        "onion sambar": [
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            }
+        ],
+        "onion": [
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            },
+            {
+                "type": "kilogram",
+                "regex": "kg",
+                "quantity": 1
+            }
+        ],
+        "okra": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "muskmelon": [
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            }
+        ],
+        "musk melon": [
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            }
+        ],
+        "mushroom": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "mosambi": [
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            },
+            {
+                "type": "kilogram",
+                "regex": "per kg",
+                "quantity": 1
+            }
+        ],
+        "mint leaves": [
+            {
+                "type": "bunch",
+                "regex": "per bunch",
+                "quantity": 1
+            },
+            {
+                "type": "bunch",
+                "regex": "([0-9.]+) bunch"
+            }
+        ],
+        "methi leaves": [
+            {
+                "type": "bunch",
+                "regex": "bunch",
+                "quantity": 1
+            }
+        ],
+        "methi": [
+            {
+                "type": "bunch",
+                "regex": "bunch",
+                "quantity": 1
+            }
+        ],
+        "lemon": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "lauki": [
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            }
+        ],
+        "kundri": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "ginger": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "garlic": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "drumstick": [
+            {
+                "type": "piece",
+                "regex": "each",
+                "quantity": 1
+            }
+        ],
+        "drumsticks": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "dragonfruit": [
+            {
+                "type": "piece",
+                "regex": "per pc",
+                "quantity": 1
+            }
+        ],
+        "curry leaves": [
+            {
+                "type": "bunch",
+                "regex": "([0-9.]+) bunch"
+            }
+        ],
+        "cucumber madras": [
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            }
+        ],
+        "cucumber keera": [
+            {
+                "type": "kilogram",
+                "regex": "kg",
+                "quantity": 1
+            }
+        ],
+        "cucumber": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            },
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            }
+        ],
+        "corn sweet shelled": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "corn sweet": [
+            {
+                "type": "piece",
+                "regex": "([0-9.]+) pc"
+            }
+        ],
+        "corn baby": [
+            {
+                "type": "pack",
+                "regex": "([0-9.]+) pack"
+            },
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "coriander": [
+            {
+                "type": "bunch",
+                "regex": "bunch",
+                "quantity": 1
+            }
+        ],
+        "coconut tender": [
+            {
+                "type": "piece",
+                "regex": "([0-9.]+) pc"
+            },
+            {
+                "type": "piece",
+                "regex": "per piece",
+                "quantity": 1
+            }
+        ],
+        "coconut kalash": [
+            {
+                "type": "piece",
+                "regex": "([0-9.]+) pc"
+            }
+        ],
+        "coconut": [
+            {
+                "type": "piece",
+                "regex": "([0-9.]+) pc"
+            }
+        ],
+        "coccinia": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "chilli green": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "chillies green": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "cauliflower": [
+            {
+                "type": "piece",
+                "regex": "([0-9.]+) pc"
+            },
+            {
+                "type": "piece",
+                "regex": "per pc",
+                "quantity": 1
+            }
+        ],
+        "colocasia":[
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "carrot red": [
+            {
+                "type": "kilogram",
+                "regex": "per kg",
+                "quantity": 1
+            }
+        ],
+        "carrot": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "capsicum yellow": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "capsicum red": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "capsicum green": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "cabbage red": [
+            {
+                "type": "unknown",
+                "regex": "",
+                "quantity": 1
+            }
+        ],
+        "cabbage": [
+            {
+                "type": "piece",
+                "regex": "per pc",
+                "quantity": 1
+            },
+            {
+                "type": "piece",
+                "regex": "([0-9.]+) pc"
+            }
+        ],
+        "broccoli": [
+            {
+                "type": "piece",
+                "regex": "each",
+                "quantity": 1
+            },
+            {
+                "type": "unknown",
+                "regex": "",
+                "quantity": 1
+            }
+        ],
+        "brinjal purple striped": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "brinjal nagpure": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "brinjal green round": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            },
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            }
+        ],
+        "brinjal long purple": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            },
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            }
+        ],
+        "brinjal black": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            },
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            }
+        ],
+        "bitter gourd": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            },
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            }
+        ],
+        "sponge gourd": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            },
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            }
+        ],
+        "bhendi": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        
+        "beetroot": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "beans local": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "beans cow pea": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "beans french": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "beans cowpea": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "beans cluster": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "banana yellaki": [
+            {
+                "type": "piece",
+                "regex": "([0-9.]+) pc"
+            }
+        ],
+        "banana stem": [
+            {
+                "type": "unknown",
+                "regex": "",
+                "quantity": 1
+            }
+        ],
+        "banana robusta": [
+            {
+                "type": "piece",
+                "regex": "([0-9.]+) pc"
+            }
+        ],
+        "banana red": [
+            {
+                "type": "pack",
+                "regex": "box",
+                "quantity": 1
+            }
+        ],
+        "banana raw": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            },
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            }
+        ],
+        "banana flower": [
+            {
+                "type": "unknown",
+                "regex": "",
+                "quantity": 1
+            }
+        ],
+        "banana": [
+            {
+                "type": "piece",
+                "regex": "([0-9.]+) pc"
+            }
+        ],
+        "ash gourd": [
+            {
+                "type": "kilogram",
+                "regex": "([0-9.]+) kg"
+            },
+            {
+                "type": "piece",
+                "regex": "each",
+                "quantity": 1
+            }
+        ],
+        "arbi": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ],
+        "amla": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
+            }
+        ]
+    },
+    "exclude_keywords": [
+        "trikaya",
+        "trueganic",
+        "microgreen",
+        "microgreens",
+        "frisee",
+        "potted",
+        "grapes",
+        "dates",
+        "apple",
+        "tamarind",
+        "kiwi",
+        "ground nut",
+        "zucchini",
+        "mulberry",
+        "guava",
+        "lettuce",
+        "lemongrass",
+        "mango",
+        "avocado",
+        "avacado",
+        "blueberry",
+        "sage",
+        "kangkong",
+        "chives",
+        "tarragon",
+        "marjoram",
+        "pok choy",
+        "pak choi",
+        "alfalfa",
+        "kale",
+        "swiss chard",
+        "oregano",
+        "thyme",
+        "leek",
+        "brussel",
+        "celery",
+        "rosemary",
+        "basil",
+        "arugula",
+        "turmeric",
+        "chilli bhajji",
+        "sun melon",
+        "coloured capsicum",
+        "pumpkin",
+        "pumkin",
+        "turnip",
+        "plum",
+        "lotus",
+        "mustard",
+        "carrot orange",
+        "pears",
+        "pear",
+        "marigold",
+        "aloe vera",
+        "asparagus",
+        "chrysanthamum",
+        "rose",
+        "melon sugar baby",
+        "chow chow",
+        "hybrid chilli",
+        "anjeer",
+        "blue berry",
+        "pakchoi",
+        "makroot",
+        "broad beans",
+        "gandharaj",
+        "betel leaf",
+        "wheatgrass",
+        "knol"
+    ]
+}
