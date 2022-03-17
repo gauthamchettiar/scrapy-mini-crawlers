@@ -1,3 +1,5 @@
 .env
 *.pyc
 scraped_data/
+cleaned_data/
+error_data/
