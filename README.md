@@ -30,14 +30,19 @@ Currently includes following scrapers,
     ```
 4. Set project : 
     ```bash
-    # Refer individual project, for projects settings string
-    # change 'settings.default' in 'scrapy.cfg'
-    [settings]
-    default = scrapy_jiomart.settings
+    # Set project simply by setting an env variable,
+    
+    # export SCRAPY_PROJECT=<project-name>
+    export SCRAPY_PROJECT=scrapy_jiomart
+
+    # Refer 'scrapy.cfg' file for complete list of projects available
     ```
-5. Run crawler :
+5. Run a spider (crawler) :
     ```bash
     # scrapy crawl <crawler-name> <optional-params>
     scrapy crawl jio-by-top-deals
+
+    # Run below command to get all spiders(crawlers) defined for a project
+    scrapy list
     ```
-6. Crawled data will be available at 'scraped_data/' folder.
+6. Crawled data will be available at `scraped_data/` folder.
