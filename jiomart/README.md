@@ -1,4 +1,4 @@
-# SCRAPY MINI CRAWLERS : scrapy_jiomart
+# SCRAPY MINI CRAWLERS : jiomart
 
 ## Disclaimer
 1. Cannot guarantee it's working, as website may change it's structure or URL at any point in time and I might not keep it up-to-date with those changes.
@@ -32,18 +32,18 @@
 ## Spiders
 1. jio-by-category : 
     ```python
-    # related settting @ scrapy_jiomart/settings.py
+    # related settting @ jiomart/settings.py
     URL_CATEGORY = "https://www.jiomart.com/all-category"
     CATEGORIES_TO_PARSE = ["Fruits & Vegetables"]
     ```
 2. jio-by-top-deals : 
     ```python
-    # related settting @ scrapy_jiomart/settings.py
+    # related settting @ jiomart/settings.py
     URL_TOP_DEALS = "https://www.jiomart.com/all-topdeals"
     ```
 3. jio-by-url : 
     ```python
-    # related settting @ scrapy_jiomart/settings.py
+    # related settting @ jiomart/settings.py
     URLS = {
     "Hotspot Deals" : "https://www.jiomart.com/c/groceries/bestdeals/hotspot/706",
     "Hot Food Fest" : "https://www.jiomart.com/c/groceries/bestdeals/hot-food-fest-2022/4515"
@@ -54,7 +54,7 @@
 ### Fetching Data
 ```bash
 # Set Project
-export SCRAPY_PROJECT=scrapy_jiomart
+export SCRAPY_PROJECT=jiomart
 
 # Get a list of defines spiders
 scrapy list
@@ -66,11 +66,11 @@ scrapy list
 scrapy crawl jio-by-category
 ```
 ### Cleaning Fetched Data
-Cleaner have been provided @ `scrapy_jiomart/cleaners/extract_quantity.py`.
+Cleaner have been provided @ `jiomart/cleaners/extract_quantity.py`.
 
 Run below command to invoke cleaning job,
 ```bash
-python scrapy_jiomart/cleaners/extract_quantity.py
+python jiomart/cleaners/extract_quantity.py
 ```
 Above command will do following things,
 1. Checks for any uncleaned file from 'scraped_data/jiomart'. 

@@ -4,7 +4,7 @@ Just a repository of useful crawlers implemented using [scrapy](https://github.c
 README has been provided for individual crawlers, refer links below for additional information.
 
 Currently includes following scrapers,
-1. [scrapy_jiomart](scrapy_jiomart/) : Crawls https://jiomart.com for inventory items.
+1. [jiomart](jiomart/) : Crawls https://jiomart.com for inventory items.
 
 
 ## Disclaimer
@@ -33,7 +33,7 @@ Currently includes following scrapers,
     # Set project simply by setting an env variable,
     
     # export SCRAPY_PROJECT=<project-name>
-    export SCRAPY_PROJECT=scrapy_jiomart
+    export SCRAPY_PROJECT=jiomart
 
     # Refer 'scrapy.cfg' file for complete list of projects available
     ```

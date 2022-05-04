@@ -1,5 +1,5 @@
 from scrapy import Spider
-from scrapy_jiomart.items import JiomartInventoryItem
+from jiomart.items import JiomartInventoryItem
 
 class BaseSpider(Spider):
     def parse_items(self, response, category=None):

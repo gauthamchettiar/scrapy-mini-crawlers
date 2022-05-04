@@ -362,6 +362,10 @@
             {
                 "type": "kilogram",
                 "regex": "([0-9.]+) kg"
+            },
+            {
+                "type": "piece",
+                "regex": "([0-9.]+) pc"
             }
         ],
         "mushroom": [
@@ -473,6 +477,12 @@
                 "type": "kilogram",
                 "regex": "kg",
                 "quantity": 1
+            }
+        ],
+        "cucumber regular": [
+            {
+                "type": "gram",
+                "regex": "([0-9.]+) g"
             }
         ],
         "cucumber": [
@@ -798,6 +808,12 @@
                 "quantity": 1
             }
         ],
+        "leaves arbi": [
+            {
+                "type": "bunch",
+                "regex": "([0-9.]+) bunch"
+            }
+        ],
         "arbi": [
             {
                 "type": "gram",
@@ -880,6 +896,9 @@
         "gandharaj",
         "betel leaf",
         "wheatgrass",
-        "knol"
+        "knol",
+        "thai ginger",
+        "tinda",
+        "cherry red"
     ]
 }

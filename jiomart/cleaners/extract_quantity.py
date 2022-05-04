@@ -15,7 +15,7 @@ import re
 
 class Extraction():
     def __init__(self):
-        with open("scrapy_jiomart/cleaners/cleaning_rules.json", 'r') as crfile:
+        with open("jiomart/cleaners/cleaning_rules.json", 'r') as crfile:
             self.cleaning_rules = json.load(crfile)
         self.scraped_data_folder = "scraped_data/jiomart"
         self.cleaned_data_folder = "cleaned_data/jiomart"

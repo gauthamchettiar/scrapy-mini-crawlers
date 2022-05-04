@@ -1,6 +1,6 @@
 from datetime import datetime
 from os.path import abspath, curdir
-# Scrapy settings for scrapy_jiomart project
+# Scrapy settings for jiomart project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@ from os.path import abspath, curdir
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'scrapy_jiomart'
+BOT_NAME = 'jiomart'
 
-SPIDER_MODULES = ['scrapy_jiomart.spiders']
-NEWSPIDER_MODULE = 'scrapy_jiomart.spiders'
+SPIDER_MODULES = ['jiomart.spiders']
+NEWSPIDER_MODULE = 'jiomart.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'scrapy_jiomart (+http://www.yourdomain.com)'
+#USER_AGENT = 'jiomart (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -47,13 +47,13 @@ DOWNLOAD_DELAY = 3
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'scrapy_jiomart.middlewares.ScrapyJiomartSpiderMiddleware': 543,
+#    'jiomart.middlewares.ScrapyJiomartSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'scrapy_jiomart.middlewares.ScrapyJiomartDownloaderMiddleware': 543,
+#    'jiomart.middlewares.ScrapyJiomartDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ DOWNLOAD_DELAY = 3
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'scrapy_jiomart.pipelines.ScrapyJiomartPipeline': 300,
+#    'jiomart.pipelines.ScrapyJiomartPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -91,7 +91,7 @@ DOWNLOAD_DELAY = 3
 
 # Custom Headers Required for Functioning of given Spider
 # Since each area has different products listed, PINCODE governs which area to parse data from
-PINCODE = "110001"
+PINCODE = "400706"
 
 # URL for top-deals
 URL_TOP_DEALS = "https://www.jiomart.com/all-topdeals"
@@ -108,7 +108,7 @@ CATEGORIES_TO_PARSE = ["Fruits & Vegetables"]
 
 
 # Configure AWS Parameters to upload files
-#AWS_BUCKET_NAME = ""
+# AWS_BUCKET_NAME = ""
 #AWS_ACCESS_KEY_ID = ""
 #AWS_SECRET_ACCESS_KEY = ""
 
@@ -116,15 +116,15 @@ CATEGORIES_TO_PARSE = ["Fruits & Vegetables"]
 def get_partitioned_path(timestamp:datetime):
     return f"{timestamp.strftime('%Y%m')}/{timestamp.strftime('%Y%m%d')}"
 
-# Feeds - places where you need to place the scraped files
+# Feeds - places where you need to upload/keep the scraped files
 # TIP: You can comment it out and use --output instead
 FEEDS = {
-        f"file:///{abspath(curdir)}/scraped_data/jiomart/{get_partitioned_path(datetime.now())}.json": {
+        f"file:///{abspath(curdir)}/scraped_data/jiomart/{get_partitioned_path(datetime.now())}_{PINCODE}.json": {
             'format': 'json',
             'overwrite': True
         },
-        #f"s3://{AWS_BUCKET_NAME}/scraped_data/jiomart/{get_partitioned_path(datetime.now())}.json": {
-        #    'format': 'json',
-        #    'overwrite': True
-        #}
+        f"s3://{AWS_BUCKET_NAME}/scraped_data/jiomart/{get_partitioned_path(datetime.now())}_{PINCODE}.json": {
+           'format': 'json',
+           'overwrite': True
+        }
     }
